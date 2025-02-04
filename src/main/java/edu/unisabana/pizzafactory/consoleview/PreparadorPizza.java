@@ -28,7 +28,7 @@ public class PreparadorPizza {
             
             // Selección del tipo de pizza
             FabricaPizza fabrica;
-            String tipoPizza = "gruesa"; // Esto podría ser una entrada del usuario
+            String tipoPizza = "delgada"; // Esto podría ser una entrada del usuario
 
             switch (tipoPizza) {
                 case "delgada" -> {
@@ -47,7 +47,7 @@ public class PreparadorPizza {
                     }
             }
 
-            pp.prepararPizza(ingredientes, Tamano.PEQUENO, fabrica);
+            pp.prepararPizza(ingredientes, Tamano.MEDIANO, fabrica);
         } catch (ExcepcionParametrosInvalidos ex) {
             Logger.getLogger(PreparadorPizza.class.getName()).log(Level.SEVERE, "Problema en la preparación de la Pizza", ex);
         }
